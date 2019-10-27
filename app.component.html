@@ -1,0 +1,5 @@
+<div cdkDropList (cdkDropListDropped)="drop($event)" style="margin-top: 2cm;">
+<div cdkDrag *ngFor="let n of num" class="drag">
+{{n}}
+</div>
+</div>

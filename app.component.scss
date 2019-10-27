@@ -1,0 +1,142 @@
+body {
+	background-color: #f1f1f1;
+	font-family: Helvetica,Arial,Verdana;
+
+}
+
+
+.icon{
+    position: absolute;
+    right: 465px;
+    top: 23px;
+}
+h1 {
+	color: green;
+	text-align: center;
+}
+.redfamily {
+	color: red;	
+}
+.search-box,.close-icon,.search-wrapper {
+	position: relative;
+	padding: 10px;
+}
+.search-wrapper {
+	width: 500px;
+	margin: auto;
+	margin-top: 50px;
+}
+.search-box {
+	width: 80%;
+	border: 1px solid #ccc;
+  outline: 0;
+ 
+}
+.search-box:focus {
+        border-bottom: 2px solid #ffcc00;
+        background-color: rgb(214, 190, 190);
+}
+.close-icon {
+	border:1px solid transparent;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+}
+.close-icon:after {
+	content: "X";
+	display: block;
+	width: 19px;
+	height: 18px;
+	position: absolute;
+	background-color: rgb(75, 69, 69);
+	z-index:1;
+	right: 35px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 0px 1px 1px 1px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 12px;
+	
+	cursor: pointer;
+}
+
+
+.inputs{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding-left: 25px;
+}
+
+
+.select{
+    margin-left: 3cm;
+    width: 200px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    /* no standardized syntax available, no ie-friendly solution available */
+  }
+
+
+  .rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    left: 288px;
+    pointer-events: none;
+    
+}
+
+.arrow:active{
+    transform: translateY(-50%) rotate(180deg);
+}
+
+
+.sel{
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #000000;
+    outline: 0px; 
+}
+
+.sel:focus,select:focus{
+    
+    border-bottom: 2px solid #ffcc00;
+    outline: none !important;
+}
+
+.sel option{
+    outline: none !important;
+    background-color: rgb(194, 35, 35);
+}
+
+.sel option:hover{
+background-color: yellowgreen;
+}
+
+.drag{
+    margin-left: 3cm;
+    height: 1cm;
+    width: 4cm;
+    border:1px solid green;
+        
+    justify-content: center;
+    align-items: center;
+}
